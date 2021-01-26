@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-if os.path.exists('secret_settings.py'):
-	from secret_settings import *
+if os.path.exists('portfolio/secret_settings.py'):
+	from portfolio.secret_settings import *
 else:
 	SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
