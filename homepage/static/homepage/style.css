@@ -1,6 +1,8 @@
 html {
   height: 100%;
 }
-h1 {
-  color: blue;
+
+a {
+  color:#298f45;
+  bold;
 }
