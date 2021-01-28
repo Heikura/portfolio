@@ -18,10 +18,7 @@ import os
 if os.path.exists('portfolio/secret_settings.py'):
 	from portfolio.secret_settings import *
 else:
-	try:
-		SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
-	except:
-		SECRET_KEY = os.environ['secret']
+	SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
