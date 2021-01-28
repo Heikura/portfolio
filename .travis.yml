@@ -4,6 +4,7 @@ python:
 
 env:
 - DJANGO_VERSION=3.1.5
+- DJANGO_SECRET_KEY
 
 # install dependencies
 install:
