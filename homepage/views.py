@@ -7,4 +7,4 @@ def index(request):
     return render(request, 'homepage/index.html')
 
 def projects(request):
-    return render(request, 'homepage/projects.html')
+    return render(request, 'homepage/index.html')
