@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
-
 {% load static %}
+
 <html lang="en">
 
 <head>
@@ -12,70 +11,163 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome5-overrides.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/Animated-Type-Heading.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Team-with-rotating-cards.css' %}">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="height: 110px;">
-        <div class="container"><a class="navbar-brand" href="home">Arttu Heikura</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-dark navbar-expand-md text-right navigation-clean" style="height: 110px;background: rgb(51,51,51);">
+        <div class="container"><a class="navbar-brand" href="home" style="color: var(--light);font-family: Lato, sans-serif;">Arttu Heikura</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="home"><strong>Home</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html"><strong>CV</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><strong>Contact</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/index" style="color: var(--gray);font-family: Lato, sans-serif;"><strong>Home</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cv" style="color: var(--light);font-family: Lato, sans-serif;"><strong>CV</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact" style="color: var(--light);font-family: Lato, sans-serif;"><strong>Contact</strong></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <section class="text-center" style="min-height: 464px;margin: 0;padding: 0px;">
-            <div class="container" style="min-height: 150;">
-                <div class="text-center" style="height: 10;">
-                    <picture><img src="{% static 'assets/img/arttu.jpg' %}"></picture>
+        <section class="text-center" style="min-height: 464px;margin: 0;padding: 0px;background: rgba(255,255,255,0);">
+            <div class="container" style="min-height: 150;border-radius: 52px;border-right-width: 7px;">
+                <div class="row">
+                    <div class="col" style="border-width: 0px;border-style: none;">
+                        <div class="text-center" style="height: 10;">
+                            <picture><img src="{% static 'assets/img/arttu4.png' %}" style="height: 223px;background-size: cover;background-repeat: no-repeat;margin: auto;margin-top: 30px;border-radius: 150px;margin-bottom: 30px;padding: 0;margin-left: auto;margin-right: auto;"></picture>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <p style="font-size: 24px;font-family: Lato, sans-serif;">Hey! I am <strong>Arttu Heikura</strong>. I work as a Data science planner, and my current position includes working as a data scientist, engineer, and analyst.&nbsp; My passion is to improve data architectures to enable machine learning model deployments in a cloud environment.<br><br></p>
                 </div>
             </div>
         </section>
+        <section>
+            <section class="card-section-imagia">
+                <h1>Core skills</h1>
+                <h2></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card-container-imagia">
+                                <div class="card-imagia">
+                                    <div class="front-imagia">
+                                        <div class="cover-imagia"><img src="{% static 'assets/img/cloud-computing-2001090_640.jpg' %}"></div>
+                                        <div class="content-imagia">
+                                            <h3 class="name-imagia">Cloud</h3>
+                                            <p class="subtitle-imagia">Microsoft Azure</p>
+                                            <p class="text-center"><em>Machine learning model development and deployment in Microsoft Azure.</em><br><br><em>Data pipeline creation and automation.</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="back-imagia">
+                                        <div class="content-imagia content-back-imagia">
+                                            <div>
+                                                <h3 class="text-center">Azure</h3>
+                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                            </div>
+                                        </div>
+                                        <div class="footer-imagia">
+                                            <div class="social-imagia text-center"><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="fa fa-linkedin"></i></a><a href="https://github.com/Artoiss"><i class="fa fa-github"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fa fa-stack-overflow"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card-container-imagia" style="background: #ffffff;">
+                                <div class="card-imagia">
+                                    <div class="front-imagia" style="color: #212529;">
+                                        <div class="cover-imagia cover-gradient" style="background: rgb(255,255,255);"><img src="{% static 'assets/img/security-4700815_640.jpg' %}"></div>
+                                        <div class="content-imagia">
+                                            <h3 class="name-imagia">Data Science</h3>
+                                            <p class="subtitle-imagia">Python, Matlab, R</p>
+                                            <p class="text-center"><em>Machine learning<br>Data analysis &amp; Visualization<br>Databases<br></em></p>
+                                        </div>
+                                    </div>
+                                    <div class="back-imagia">
+                                        <div class="content-imagia content-back-imagia">
+                                            <div>
+                                                <h3 class="text-center">Data Science</h3>
+                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                            </div>
+                                        </div>
+                                        <div class="footer-imagia">
+                                            <div class="social-imagia text-center"><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="fa fa-facebook"></i></a><a href="https://github.com/Artoiss"><i class="fa fa-linkedin"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fa fa-twitter"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card-container-imagia">
+                                <div class="card-imagia">
+                                    <div class="front-imagia">
+                                        <div class="cover-imagia"><img alt="" src="{% static 'assets/img/gears-1311171_640.jpg' %}"></div>
+                                        <div class="content-imagia">
+                                            <h3 class="name-imagia">Software engineering &amp;<br>Automation</h3>
+                                            <p class="subtitle-imagia"></p>
+                                            <p class="text-center"><em>Automation for production and testing environments.<br>...<br></em></p>
+                                        </div>
+                                    </div>
+                                    <div class="back-imagia">
+                                        <div class="content-imagia content-back-imagia">
+                                            <div>
+                                                <h3 class="text-center">Software engineering &amp; Automation</h3>
+                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                            </div>
+                                        </div>
+                                        <div class="footer-imagia">
+                                            <div class="social-imagia text-center"><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="fa fa-linkedin"></i></a><a href="https://github.com/Artoiss"><i class="fa fa-github"></i></a><a href="#"><i class="fa fa-stack-overflow"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
         <section style="min-height: 335px;">
             <div class="container" style="padding: 10px;">
                 <div>
-                    <h1 class="text-center" style="margin: 25px;padding: 0px;">Tech skills</h1>
+                    <h1 class="text-center" style="margin: 25px;padding: 0px;font-family: Lato, sans-serif;color: var(--gray-dark);">Frameworks</h1>
                 </div>
                 <div class="row" style="min-height: 50px;">
-                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img src="{% static 'assets/img/python_logo.png' %}" style="min-height: 40px;height: 40px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="min-height: 50px;width: 178px;padding: 0px;"><a href="https://pytorch.org/"><img src="{% static 'assets/img/Pytorch_logo.png' %}" style="height: 31px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;"><a href="https://spark.apache.org/"><img src="{% static 'assets/img/spark_logo.png' %}" style="height: 54px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a href="https://azure.microsoft.com/en-us/"><img src="{% static 'assets/img/azure_logo.png' %}" style="height: 32px;margin: 0px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;"><a href="https://www.docker.com/"><img src="{% static 'assets/img/docker_logo.svg' %}" style="height: 60px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a class="text-center" href="https://www.djangoproject.com/"><img src="{% static 'assets/img/django-logo.png' %}" style="height: 47px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="margin: 10px;"><a href="https://www.javascript.com/"><img src="{% static 'assets/img/logo-javascript.svg' %}" style="height: 63px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/python_logo.png' %}" style="min-height: 40px;height: 40px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="min-height: 50px;width: 178px;padding: 0px;"><a href="https://pytorch.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Pytorch_logo.png' %}" style="height: 31px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;"><a href="https://spark.apache.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/spark_logo.png' %}" style="height: 54px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" data-bss-hover-animate="pulse" style="padding: 0px;margin: 10px;"><a href="https://azure.microsoft.com/en-us/"><img src="{% static 'assets/img/azure_logo.png' %}" style="height: 32px;margin: 0px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;"><a href="https://www.docker.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/docker_logo.svg' %}" style="height: 60px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a class="text-center" href="https://www.djangoproject.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/django-logo.png' %}" style="height: 47px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="margin: 10px;"><a href="https://www.javascript.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/logo-javascript.svg' %}" style="height: 63px;margin: 10px 0px;"></a></div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><a href="https://www.tensorflow.org/"><img src="{% static 'assets/img/tensorflow.png' %}" style="height: 69px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://scikit-learn.org/stable/"><img src="{% static 'assets/img/sckit-logo.png' %}" style="height: 49px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://reactjs.org/"><img src="{% static 'assets/img/react-logo.png' %}" style="height: 79px;margin: 10px 0px;padding: 0px;"></a></div>
-                    <div class="col text-center"><a href="https://numpy.org/"><img style="margin: 10px;height: 64px;" src="{% static 'assets/img/numpy.png' %}"></a></div>
-                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img style="margin: 10px;height: 94px;" src="{% static 'assets/img/pandas-logo.png' %}"></a></div>
-                    <div class="col text-center"><a href="https://se.mathworks.com/products/matlab.html"><img src="{% static 'assets/img/Matlab_Logo.png' %}" style="margin: 10px 0px;height: 79px;"></a></div>
-                    <div class="col text-center"><a href="https://git-scm.com/"><img src="{% static 'assets/img/git-logo.png' %}" style="height: 46px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://www.tensorflow.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/tensorflow.png' %}" style="height: 69px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" data-bss-hover-animate="pulse"><a href="https://scikit-learn.org/stable/"><img src="{% static 'assets/img/sckit-logo.png' %}" style="height: 49px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://reactjs.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/react-logo.png' %}" style="height: 79px;margin: 10px 0px;padding: 0px;"></a></div>
+                    <div class="col text-center"><a href="https://numpy.org/"><img data-bss-hover-animate="pulse" style="margin: 10px;height: 64px;" src="{% static 'assets/img/numpy.png' %}"></a></div>
+                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img data-bss-hover-animate="pulse" style="margin: 10px;height: 94px;" src="{% static 'assets/img/pandas-logo.png' %}"></a></div>
+                    <div class="col text-center"><a href="https://se.mathworks.com/products/matlab.html"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Matlab_Logo.png' %}" style="margin: 10px 0px;height: 79px;"></a></div>
+                    <div class="col text-center"><a href="https://git-scm.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/git-logo.png' %}" style="height: 46px;margin: 10px 0px;"></a></div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img src="{% static 'assets/img/power-bi-logo.svg' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://www.r-project.org/"><img src="{% static 'assets/img/r-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img src="{% static 'assets/img/c-logo.png' %}" style="margin: 10px 0px;height: 75px;"></a></div>
-                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img src="{% static 'assets/img/c+-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/devops/"><img src="{% static 'assets/img/azure-devops.png' %}" style="height: 30px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/power-bi-logo.svg' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://www.r-project.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/r-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c-logo.png' %}" style="margin: 10px 0px;height: 75px;"></a></div>
+                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c+-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/devops/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/azure-devops.png' %}" style="height: 30px;margin: 10px 0px;"></a></div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center footer-dark" style="padding: 37px 0px;margin: 10px;height: 180px;">
+    <footer class="text-center footer-dark" style="padding: 37px 0px;margin: 0px;height: 180px;color: rgb(240, 249, 255);background: #222222;">
         <div class="row">
             <div class="col">
                 <div style="margin: 0px;height: 36px;"><a href="#" style="margin: 15px;color: rgb(255,255,255);">CV</a><a href="#" style="margin: 15px;color: rgb(255,255,255);">Contact</a></div>
@@ -83,15 +175,16 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col item social" style="margin: 0px;height: 35px;"><a href="https://github.com/Artoiss"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="icon ion-social-linkedin"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fab fa-stack-overflow"></i></a></div>
+                <div class="col item social" style="margin: 0px;height: 35px;"><a href="https://github.com/Artoiss"><i class="icon ion-social-github" data-bss-hover-animate="pulse"></i></a><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="icon ion-social-linkedin" data-bss-hover-animate="pulse"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fab fa-stack-overflow" data-bss-hover-animate="pulse"></i></a></div>
                 <div class="links"></div>
             </div>
             <p class="copyright">Arttu Heikura © 2021</p>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+    <script src="{% static 'assets/js/Animated-Type-Heading.js' %}"></script>
 </body>
 
 </html>
