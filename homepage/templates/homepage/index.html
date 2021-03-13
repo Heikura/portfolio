@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 {% load static %}
@@ -8,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>portfolio</title>
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Animated-Type-Heading.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/Footer-Dark.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
@@ -16,57 +21,77 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="height: 110px;">
-        <div class="container"><a class="navbar-brand" href="">Arttu Heikura</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="home">Arttu Heikura</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active" href="home"><strong>Home</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><strong>CV</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><strong>Contact</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html"><strong>CV</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><strong>Contact</strong></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="text-center" style="height: 518px;margin: 0;padding: 0px;">
-        <div class="container" style="height: 150;">
-            <div class="text-center" style="height: 10;">
-                <picture><img src="{% static 'assets/img/arttu.jpg' %}" ></picture>
+    <main>
+        <section class="text-center" style="min-height: 464px;margin: 0;padding: 0px;">
+            <div class="container" style="min-height: 150;">
+                <div class="text-center" style="height: 10;">
+                    <picture><img src="{% static 'assets/img/arttu.jpg' %}"></picture>
+                </div>
+                <div>
+                    <p style="font-size: 24px;font-family: Lato, sans-serif;">Hey! I am <strong>Arttu Heikura</strong>. I work as a Data science planner, and my current position includes working as a data scientist, engineer, and analyst.&nbsp; My passion is to improve data architectures to enable machine learning model deployments in a cloud environment.<br><br></p>
+                </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+        <section style="min-height: 335px;">
+            <div class="container" style="padding: 10px;">
+                <div>
+                    <h1 class="text-center" style="margin: 25px;padding: 0px;">Tech skills</h1>
+                </div>
+                <div class="row" style="min-height: 50px;">
+                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img src="{% static 'assets/img/python_logo.png' %}" style="min-height: 40px;height: 40px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="min-height: 50px;width: 178px;padding: 0px;"><a href="https://pytorch.org/"><img src="{% static 'assets/img/Pytorch_logo.png' %}" style="height: 31px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;"><a href="https://spark.apache.org/"><img src="{% static 'assets/img/spark_logo.png' %}" style="height: 54px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a href="https://azure.microsoft.com/en-us/"><img src="{% static 'assets/img/azure_logo.png' %}" style="height: 32px;margin: 0px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;"><a href="https://www.docker.com/"><img src="{% static 'assets/img/docker_logo.svg' %}" style="height: 60px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a class="text-center" href="https://www.djangoproject.com/"><img src="{% static 'assets/img/django-logo.png' %}" style="height: 47px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center" style="margin: 10px;"><a href="https://www.javascript.com/"><img src="{% static 'assets/img/logo-javascript.svg' %}" style="height: 63px;margin: 10px 0px;"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col text-center"><a href="https://www.tensorflow.org/"><img src="{% static 'assets/img/tensorflow.png' %}" style="height: 69px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://scikit-learn.org/stable/"><img src="{% static 'assets/img/sckit-logo.png' %}" style="height: 49px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://reactjs.org/"><img src="{% static 'assets/img/react-logo.png' %}" style="height: 79px;margin: 10px 0px;padding: 0px;"></a></div>
+                    <div class="col text-center"><a href="https://numpy.org/"><img style="margin: 10px;height: 64px;" src="{% static 'assets/img/numpy.png' %}"></a></div>
+                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img style="margin: 10px;height: 94px;" src="{% static 'assets/img/pandas-logo.png' %}"></a></div>
+                    <div class="col text-center"><a href="https://se.mathworks.com/products/matlab.html"><img src="{% static 'assets/img/Matlab_Logo.png' %}" style="margin: 10px 0px;height: 79px;"></a></div>
+                    <div class="col text-center"><a href="https://git-scm.com/"><img src="{% static 'assets/img/git-logo.png' %}" style="height: 46px;margin: 10px 0px;"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img src="{% static 'assets/img/power-bi-logo.svg' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://www.r-project.org/"><img src="{% static 'assets/img/r-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img src="{% static 'assets/img/c-logo.png' %}" style="margin: 10px 0px;height: 75px;"></a></div>
+                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img src="{% static 'assets/img/c+-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
+                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/devops/"><img src="{% static 'assets/img/azure-devops.png' %}" style="height: 30px;margin: 10px 0px;"></a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center footer-dark" style="padding: 37px 0px;margin: 10px;height: 180px;">
+        <div class="row">
+            <div class="col">
+                <div style="margin: 0px;height: 36px;"><a href="#" style="margin: 15px;color: rgb(255,255,255);">CV</a><a href="#" style="margin: 15px;color: rgb(255,255,255);">Contact</a></div>
             </div>
         </div>
-    </section>
-    <section></section>
-    <footer class="footer-dark" style="padding: 40px 0px;margin: 10px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>Projects</h3>
-                    <ul>
-                        <li><a href="#">Web design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Hosting</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 item text">
-                    <h3>Company Name</h3>
-                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                </div>
-                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                <div class="col item social" style="margin: 0px;height: 35px;"><a href="https://github.com/Artoiss"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="icon ion-social-linkedin"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fab fa-stack-overflow"></i></a></div>
+                <div class="links"></div>
             </div>
             <p class="copyright">Arttu Heikura © 2021</p>
         </div>
     </footer>
-    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
 </body>
 
 </html>
