@@ -1,38 +1,41 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>portfolio</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
-    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome5-overrides.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Animated-Type-Heading.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Customizable-Background--Overlay.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Footer-Basic.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Footer-Dark.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/icon-star-full.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
+    <link rel="stylesheet" href="{% static 'assets/css/icon-star-full.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Team-with-rotating-cards.css' %}">
 </head>
 
 <body>
     <main>
-        <div style="background-image: url(&quot;assets/img/code5.png&quot;);height: 238px;background-position: center;background-size: cover;background-repeat: no-repeat;filter: blur(0px);">
+        <div style="background-image: url(&quot;/static/assets/img/code5.png&quot;);height: 238px;background-position: center;background-size: cover;background-repeat: no-repeat;filter: blur(0px);">
             <div class="d-flex justify-content-center align-items-center" style="min-height: 10px;width: 0%;position: absolute;left: 0;height: inherit;background: rgba(38,38,38,0.53);"></div>
         </div>
         <nav class="navbar navbar-light navbar-expand-md" style="background: #333333;">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgba(255,255,255,0.9);font-family: Lato, sans-serif;"><strong>Arttu Heikura</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2" data-bss-hover-animate="pulse" style="border-color: rgba(255,255,255,0.5);background: #f0f9ff;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="/" style="color: rgba(255,255,255,0.9);font-family: Lato, sans-serif;"><strong>Arttu Heikura</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2" data-bss-hover-animate="pulse" style="border-color: rgba(255,255,255,0.5);background: #f0f9ff;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-2">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="/index.html" style="color: rgba(169,169,169,0.9);font-family: Lato, sans-serif;"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/" style="color: rgba(169,169,169,0.9);font-family: Lato, sans-serif;"><strong>Home</strong></a></li>
                         <li class="nav-item"><a class="nav-link" href="/cv" style="color: rgb(255,255,255);font-family: Lato, sans-serif;"><strong>CV</strong></a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact" style="color: rgb(255,255,255);font-family: Lato, sans-serif;"><strong>Contact</strong></a></li>
                     </ul>
@@ -44,7 +47,7 @@
                 <div class="row">
                     <div class="col" style="border-width: 0px;border-style: none;">
                         <div class="text-center" style="height: 10;">
-                            <picture><img src="assets/img/arttu4.png" style="height: 223px;background-size: cover;background-repeat: no-repeat;margin: auto;margin-top: 30px;border-radius: 150px;margin-bottom: 30px;padding: 0;margin-left: auto;margin-right: auto;"></picture>
+                            <picture><img src="{% static 'assets/img/arttu4.png' %}" style="height: 223px;background-size: cover;background-repeat: no-repeat;margin: auto;margin-top: 30px;border-radius: 150px;margin-bottom: 30px;padding: 0;margin-left: auto;margin-right: auto;"></picture>
                         </div>
                     </div>
                 </div>
@@ -64,7 +67,7 @@
                             <div class="card-container-imagia">
                                 <div class="card-imagia">
                                     <div class="front-imagia">
-                                        <div class="cover-imagia"><img src="assets/img/cloud-computing-2001090_640.jpg"></div>
+                                        <div class="cover-imagia"><img src="{% static 'assets/img/cloud-computing-2001090_640.jpg' %}"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Cloud</h3>
                                             <p class="subtitle-imagia">Microsoft Azure</p>
@@ -76,11 +79,11 @@
                                             <div>
                                                 <h3 class="text-center">Cloud</h3>
                                                 <div class="row">
-                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/"><img src="assets/img/azure_logo.png" style="height: 32px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://www.docker.com/"><img data-bss-hover-animate="pulse" src="assets/img/docker_logo.svg" style="height: 60px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center" style="height: 44px;"><a href="https://azure.microsoft.com/en-us/services/devops/"><img data-bss-hover-animate="pulse" src="assets/img/azure-devops.png" style="height: 30px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/machine-learning/"><img data-bss-hover-animate="pulse" src="assets/img/azure-ml.png" style="height: 54px;"></a></div>
-                                                    <div class="col text-center" style="height: 99px;"><img data-bss-hover-animate="pulse" src="assets/img/azure-sql.png" style="height: 66px;"></div>
+                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/"><img src="{% static 'assets/img/azure_logo.png' %}" style="height: 32px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://www.docker.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/docker_logo.svg' %}" style="height: 60px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center" style="height: 44px;"><a href="https://azure.microsoft.com/en-us/services/devops/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/azure-devops.png' %}" style="height: 30px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/machine-learning/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/azure-ml.png' %}" style="height: 54px;"></a></div>
+                                                    <div class="col text-center" style="height: 99px;"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/azure-sql.png' %}" style="height: 66px;"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +98,7 @@
                             <div class="card-container-imagia" style="background: #ffffff;">
                                 <div class="card-imagia">
                                     <div class="front-imagia" style="color: #212529;">
-                                        <div class="cover-imagia cover-gradient" style="background: rgb(255,255,255);"><img src="assets/img/security-4700815_640.jpg"></div>
+                                        <div class="cover-imagia cover-gradient" style="background: rgb(255,255,255);"><img src="{% static 'assets/img/security-4700815_640.jpg' %}"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Data Science</h3>
                                             <p class="subtitle-imagia">Python, Matlab, R</p>
@@ -107,16 +110,16 @@
                                             <div>
                                                 <h3 class="text-center">Data Science<br><br></h3>
                                                 <div class="row">
-                                                    <div class="col text-center"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="assets/img/python_logo.png" style="min-height: 40px;height: 40px;margin: 2px 0px;"></a></div>
-                                                    <div class="col"><a href="https://pytorch.org/"><img data-bss-hover-animate="pulse" src="assets/img/Pytorch_logo.png" style="height: 20px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://spark.apache.org/"><img data-bss-hover-animate="pulse" src="assets/img/spark_logo.png" style="height: 49px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center" style="height: 64px;"><a href="https://www.tensorflow.org/"><img data-bss-hover-animate="pulse" src="assets/img/tensorflow.png" style="height: 42px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img data-bss-hover-animate="pulse" src="assets/img/power-bi-logo.svg" style="height: 40px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://scikit-learn.org/stable/"><img src="assets/img/sckit-logo.png" style="height: 35px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 50px;" src="assets/img/pandas-logo.png"></a></div>
-                                                    <div class="col text-center"><a href="https://www.r-project.org/"><img data-bss-hover-animate="pulse" src="assets/img/r-logo.png" style="height: 30px;margin: 10px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://numpy.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 40px;" src="assets/img/numpy.png"></a></div>
-                                                    <div class="col text-center" style="height: 62px;"><a href="https://se.mathworks.com/products/matlab.html"><img data-bss-hover-animate="pulse" src="assets/img/Matlab_Logo.png" style="margin: 2px 0px;height: 39px;"></a></div>
+                                                    <div class="col text-center"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/python_logo.png' %}" style="min-height: 40px;height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col"><a href="https://pytorch.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Pytorch_logo.png' %}" style="height: 20px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://spark.apache.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/spark_logo.png' %}" style="height: 49px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center" style="height: 64px;"><a href="https://www.tensorflow.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/tensorflow.png' %}" style="height: 42px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/power-bi-logo.svg' %}" style="height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://scikit-learn.org/stable/"><img src="{% static 'assets/img/sckit-logo.png' %}" style="height: 35px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 50px;" src="a{% static 'ssets/img/pandas-logo.png' %}"></a></div>
+                                                    <div class="col text-center"><a href="https://www.r-project.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/r-logo.png' %}" style="height: 30px;margin: 10px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://numpy.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 40px;" src="{% static 'assets/img/numpy.png' %}"></a></div>
+                                                    <div class="col text-center" style="height: 62px;"><a href="https://se.mathworks.com/products/matlab.html"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Matlab_Logo.png' %}" style="margin: 2px 0px;height: 39px;"></a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +134,7 @@
                             <div class="card-container-imagia">
                                 <div class="card-imagia">
                                     <div class="front-imagia">
-                                        <div class="cover-imagia"><img alt="" src="assets/img/gears-1311171_640.jpg"></div>
+                                        <div class="cover-imagia"><img alt="" src="{% static 'assets/img/gears-1311171_640.jpg' %}"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Software engineering &amp;<br>Automation</h3>
                                             <p class="subtitle-imagia"></p>
@@ -143,14 +146,14 @@
                                             <div>
                                                 <h3 class="text-center">Software engineering &amp; Automation<br><br></h3>
                                                 <div class="row">
-                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.javascript.com/"><img data-bss-hover-animate="pulse" src="assets/img/logo-javascript.svg" style="height: 49px;margin: 2px 0px;min-height: 10px;"></a></div>
-                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="assets/img/python_logo.png" style="min-height: 10px;height: 40px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a href="https://git-scm.com/"><img data-bss-hover-animate="pulse" src="assets/img/git-logo.png" style="height: 38px;margin: 2px 0px;min-height: 10px;"></a></div>
-                                                    <div class="col text-center" style="height: 60px;"><a href="#"><img data-bss-hover-animate="pulse" src="assets/img/ubuntu-server.png" style="height: 25px;min-height: 10px;margin: 2px 0px;"></a></div>
-                                                    <div class="col text-center"><a class="text-center" href="https://www.djangoproject.com/"><img data-bss-hover-animate="pulse" src="assets/img/django-logo.png" style="height: 39px;margin: 10px 0px;min-height: 10px;"></a></div>
-                                                    <div class="col text-center"><a href="https://reactjs.org/"><img data-bss-hover-animate="pulse" src="assets/img/react-logo.png" style="height: 35px;margin: 2px 0px;padding: 0px;min-height: 10px;"></a></div>
-                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="assets/img/c-logo.png" style="margin: 2px 0px;height: 30px;"></a></div>
-                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="assets/img/c+-logo.png" style="height: 35px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.javascript.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/logo-javascript.svg' %}" style="height: 49px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/python_logo.png' %}" style="min-height: 10px;height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://git-scm.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/git-logo.png' %}" style="height: 38px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center" style="height: 60px;"><a href="#"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/ubuntu-server.png' %}" style="height: 25px;min-height: 10px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a class="text-center" href="https://www.djangoproject.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/django-logo.png' %}" style="height: 39px;margin: 10px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center"><a href="https://reactjs.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/react-logo.png' %}" style="height: 35px;margin: 2px 0px;padding: 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c-logo.png' %}" style="margin: 2px 0px;height: 30px;"></a></div>
+                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c+-logo.png' %}" style="height: 35px;margin: 2px 0px;min-height: 10px;"></a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,10 +262,10 @@
         </ul>
         <p class="copyright">Arttu Heikura © 2021</p>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+    <script src="{% static 'assets/js/Animated-Type-Heading.js' %}"></script>
 </body>
 
 </html>
