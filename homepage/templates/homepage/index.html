@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-{% load static %}
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>portfolio</title>
-    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/fonts/ionicons.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome5-overrides.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/Animated-Type-Heading.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="{% static 'assets/css/Navigation-Clean.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/Team-with-rotating-cards.css' %}">
+    <link rel="stylesheet" href="assets/css/icon-star-full.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md text-right navigation-clean" style="height: 110px;background: rgb(51,51,51);">
-        <div class="container"><a class="navbar-brand" href="home" style="color: var(--light);font-family: Lato, sans-serif;">Arttu Heikura</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/index" style="color: var(--gray);font-family: Lato, sans-serif;"><strong>Home</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/cv" style="color: var(--light);font-family: Lato, sans-serif;"><strong>CV</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact" style="color: var(--light);font-family: Lato, sans-serif;"><strong>Contact</strong></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <main>
+        <div style="background-image: url(&quot;assets/img/code5.png&quot;);height: 238px;background-position: center;background-size: cover;background-repeat: no-repeat;filter: blur(0px);">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 10px;width: 0%;position: absolute;left: 0;height: inherit;background: rgba(38,38,38,0.53);"></div>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-md" style="background: #333333;">
+            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgba(255,255,255,0.9);font-family: Lato, sans-serif;"><strong>Arttu Heikura</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2" data-bss-hover-animate="pulse" style="border-color: rgba(255,255,255,0.5);background: #f0f9ff;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="/index.html" style="color: rgba(169,169,169,0.9);font-family: Lato, sans-serif;"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cv" style="color: rgb(255,255,255);font-family: Lato, sans-serif;"><strong>CV</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact" style="color: rgb(255,255,255);font-family: Lato, sans-serif;"><strong>Contact</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <section class="text-center" style="min-height: 464px;margin: 0;padding: 0px;background: rgba(255,255,255,0);">
             <div class="container" style="min-height: 150;border-radius: 52px;border-right-width: 7px;">
                 <div class="row">
                     <div class="col" style="border-width: 0px;border-style: none;">
                         <div class="text-center" style="height: 10;">
-                            <picture><img src="{% static 'assets/img/arttu4.png' %}" style="height: 223px;background-size: cover;background-repeat: no-repeat;margin: auto;margin-top: 30px;border-radius: 150px;margin-bottom: 30px;padding: 0;margin-left: auto;margin-right: auto;"></picture>
+                            <picture><img src="assets/img/arttu4.png" style="height: 223px;background-size: cover;background-repeat: no-repeat;margin: auto;margin-top: 30px;border-radius: 150px;margin-bottom: 30px;padding: 0;margin-left: auto;margin-right: auto;"></picture>
                         </div>
                     </div>
                 </div>
@@ -52,14 +56,15 @@
         <section>
             <section class="card-section-imagia">
                 <h1>Core skills</h1>
-                <h2></h2>
+                <h1 style="font-size: 18px;color: #8f8f8f;padding: 18px;"><em>Core skills and frameworks that I have been using during my work and university projects.</em></h1>
+                <h2 style="font-family: Lato, sans-serif;"></h2>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <div class="card-container-imagia">
                                 <div class="card-imagia">
                                     <div class="front-imagia">
-                                        <div class="cover-imagia"><img src="{% static 'assets/img/cloud-computing-2001090_640.jpg' %}"></div>
+                                        <div class="cover-imagia"><img src="assets/img/cloud-computing-2001090_640.jpg"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Cloud</h3>
                                             <p class="subtitle-imagia">Microsoft Azure</p>
@@ -69,8 +74,14 @@
                                     <div class="back-imagia">
                                         <div class="content-imagia content-back-imagia">
                                             <div>
-                                                <h3 class="text-center">Azure</h3>
-                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                                <h3 class="text-center">Cloud</h3>
+                                                <div class="row">
+                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/"><img src="assets/img/azure_logo.png" style="height: 32px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://www.docker.com/"><img data-bss-hover-animate="pulse" src="assets/img/docker_logo.svg" style="height: 60px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center" style="height: 44px;"><a href="https://azure.microsoft.com/en-us/services/devops/"><img data-bss-hover-animate="pulse" src="assets/img/azure-devops.png" style="height: 30px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/machine-learning/"><img data-bss-hover-animate="pulse" src="assets/img/azure-ml.png" style="height: 54px;"></a></div>
+                                                    <div class="col text-center" style="height: 99px;"><img data-bss-hover-animate="pulse" src="assets/img/azure-sql.png" style="height: 66px;"></div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="footer-imagia">
@@ -84,18 +95,29 @@
                             <div class="card-container-imagia" style="background: #ffffff;">
                                 <div class="card-imagia">
                                     <div class="front-imagia" style="color: #212529;">
-                                        <div class="cover-imagia cover-gradient" style="background: rgb(255,255,255);"><img src="{% static 'assets/img/security-4700815_640.jpg' %}"></div>
+                                        <div class="cover-imagia cover-gradient" style="background: rgb(255,255,255);"><img src="assets/img/security-4700815_640.jpg"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Data Science</h3>
                                             <p class="subtitle-imagia">Python, Matlab, R</p>
-                                            <p class="text-center"><em>Machine learning<br>Data analysis &amp; Visualization<br>Databases<br></em></p>
+                                            <p class="text-center"><em>Databases<br>Data analysis &amp; Visualization<br>Machine learning<br>Deep learning<br>Business analytics (Power BI)<br></em></p>
                                         </div>
                                     </div>
                                     <div class="back-imagia">
                                         <div class="content-imagia content-back-imagia">
                                             <div>
-                                                <h3 class="text-center">Data Science</h3>
-                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                                <h3 class="text-center">Data Science<br><br></h3>
+                                                <div class="row">
+                                                    <div class="col text-center"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="assets/img/python_logo.png" style="min-height: 40px;height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col"><a href="https://pytorch.org/"><img data-bss-hover-animate="pulse" src="assets/img/Pytorch_logo.png" style="height: 20px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://spark.apache.org/"><img data-bss-hover-animate="pulse" src="assets/img/spark_logo.png" style="height: 49px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center" style="height: 64px;"><a href="https://www.tensorflow.org/"><img data-bss-hover-animate="pulse" src="assets/img/tensorflow.png" style="height: 42px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img data-bss-hover-animate="pulse" src="assets/img/power-bi-logo.svg" style="height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://scikit-learn.org/stable/"><img src="assets/img/sckit-logo.png" style="height: 35px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 50px;" src="assets/img/pandas-logo.png"></a></div>
+                                                    <div class="col text-center"><a href="https://www.r-project.org/"><img data-bss-hover-animate="pulse" src="assets/img/r-logo.png" style="height: 30px;margin: 10px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://numpy.org/"><img data-bss-hover-animate="pulse" style="margin: 2px;height: 40px;" src="assets/img/numpy.png"></a></div>
+                                                    <div class="col text-center" style="height: 62px;"><a href="https://se.mathworks.com/products/matlab.html"><img data-bss-hover-animate="pulse" src="assets/img/Matlab_Logo.png" style="margin: 2px 0px;height: 39px;"></a></div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="footer-imagia">
@@ -109,18 +131,27 @@
                             <div class="card-container-imagia">
                                 <div class="card-imagia">
                                     <div class="front-imagia">
-                                        <div class="cover-imagia"><img alt="" src="{% static 'assets/img/gears-1311171_640.jpg' %}"></div>
+                                        <div class="cover-imagia"><img alt="" src="assets/img/gears-1311171_640.jpg"></div>
                                         <div class="content-imagia">
                                             <h3 class="name-imagia">Software engineering &amp;<br>Automation</h3>
                                             <p class="subtitle-imagia"></p>
-                                            <p class="text-center"><em>Automation for production and testing environments.<br>...<br></em></p>
+                                            <p class="text-center"><em>Automation for production and testing environments.<br><br>Software development<br>Embedded system<br>Web application development<br></em></p>
                                         </div>
                                     </div>
                                     <div class="back-imagia">
                                         <div class="content-imagia content-back-imagia">
                                             <div>
-                                                <h3 class="text-center">Software engineering &amp; Automation</h3>
-                                                <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca. </p>
+                                                <h3 class="text-center">Software engineering &amp; Automation<br><br></h3>
+                                                <div class="row">
+                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.javascript.com/"><img data-bss-hover-animate="pulse" src="assets/img/logo-javascript.svg" style="height: 49px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="assets/img/python_logo.png" style="min-height: 10px;height: 40px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a href="https://git-scm.com/"><img data-bss-hover-animate="pulse" src="assets/img/git-logo.png" style="height: 38px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center" style="height: 60px;"><a href="#"><img data-bss-hover-animate="pulse" src="assets/img/ubuntu-server.png" style="height: 25px;min-height: 10px;margin: 2px 0px;"></a></div>
+                                                    <div class="col text-center"><a class="text-center" href="https://www.djangoproject.com/"><img data-bss-hover-animate="pulse" src="assets/img/django-logo.png" style="height: 39px;margin: 10px 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center"><a href="https://reactjs.org/"><img data-bss-hover-animate="pulse" src="assets/img/react-logo.png" style="height: 35px;margin: 2px 0px;padding: 0px;min-height: 10px;"></a></div>
+                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="assets/img/c-logo.png" style="margin: 2px 0px;height: 30px;"></a></div>
+                                                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="assets/img/c+-logo.png" style="height: 35px;margin: 2px 0px;min-height: 10px;"></a></div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="footer-imagia">
@@ -134,57 +165,104 @@
                 </div>
             </section>
         </section>
-        <section style="min-height: 335px;">
-            <div class="container" style="padding: 10px;">
-                <div>
-                    <h1 class="text-center" style="margin: 25px;padding: 0px;font-family: Lato, sans-serif;color: var(--gray-dark);">Frameworks</h1>
-                </div>
-                <div class="row" style="min-height: 50px;">
-                    <div class="col text-center" style="padding: 0px;"><a href="https://www.python.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/python_logo.png' %}" style="min-height: 40px;height: 40px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="min-height: 50px;width: 178px;padding: 0px;"><a href="https://pytorch.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Pytorch_logo.png' %}" style="height: 31px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;"><a href="https://spark.apache.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/spark_logo.png' %}" style="height: 54px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" data-bss-hover-animate="pulse" style="padding: 0px;margin: 10px;"><a href="https://azure.microsoft.com/en-us/"><img src="{% static 'assets/img/azure_logo.png' %}" style="height: 32px;margin: 0px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;"><a href="https://www.docker.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/docker_logo.svg' %}" style="height: 60px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="padding: 0px;margin: 10px;"><a class="text-center" href="https://www.djangoproject.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/django-logo.png' %}" style="height: 47px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" style="margin: 10px;"><a href="https://www.javascript.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/logo-javascript.svg' %}" style="height: 63px;margin: 10px 0px;"></a></div>
-                </div>
+        <section>
+            <div class="container">
+                <hr class="flex-shrink-1">
+                <h1 class="text-center" style="font-family: Lato, sans-serif;">Abilities</h1>
+                <hr class="flex-shrink-1">
+                <h1 style="font-family: Lato, sans-serif;font-size: 30px;color: #036ead;">Skills</h1>
                 <div class="row">
-                    <div class="col text-center"><a href="https://www.tensorflow.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/tensorflow.png' %}" style="height: 69px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center" data-bss-hover-animate="pulse"><a href="https://scikit-learn.org/stable/"><img src="{% static 'assets/img/sckit-logo.png' %}" style="height: 49px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://reactjs.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/react-logo.png' %}" style="height: 79px;margin: 10px 0px;padding: 0px;"></a></div>
-                    <div class="col text-center"><a href="https://numpy.org/"><img data-bss-hover-animate="pulse" style="margin: 10px;height: 64px;" src="{% static 'assets/img/numpy.png' %}"></a></div>
-                    <div class="col text-center"><a href="https://pandas.pydata.org/"><img data-bss-hover-animate="pulse" style="margin: 10px;height: 94px;" src="{% static 'assets/img/pandas-logo.png' %}"></a></div>
-                    <div class="col text-center"><a href="https://se.mathworks.com/products/matlab.html"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/Matlab_Logo.png' %}" style="margin: 10px 0px;height: 79px;"></a></div>
-                    <div class="col text-center"><a href="https://git-scm.com/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/git-logo.png' %}" style="height: 46px;margin: 10px 0px;"></a></div>
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Python</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Matlab</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>R</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>PyTorch</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Pandas &amp; NumPy</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Scikit-learn</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>SQL</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Power BI</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Azure</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Azure Machine Learning Service</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li style="font-family: Lato, sans-serif;"><span>Docker</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>UML</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Javascript</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>HTML</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>TensorFlow</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Apache Spark</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>CSS</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Django</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>React.js</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li style="font-family: Lato, sans-serif;"><span>Kubernetes</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
                 </div>
+                <hr class="flex-shrink-1">
+                <h1 style="font-family: Lato, sans-serif;font-size: 30px;color: #036ead;">Languages</h1>
                 <div class="row">
-                    <div class="col text-center"><a href="https://powerbi.microsoft.com/en-us/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/power-bi-logo.svg' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://www.r-project.org/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/r-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c-logo.png' %}" style="margin: 10px 0px;height: 75px;"></a></div>
-                    <div class="col text-center"><a href="https://en.cppreference.com/w/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/c+-logo.png' %}" style="height: 75px;margin: 10px 0px;"></a></div>
-                    <div class="col text-center"><a href="https://azure.microsoft.com/en-us/services/devops/"><img data-bss-hover-animate="pulse" src="{% static 'assets/img/azure-devops.png' %}" style="height: 30px;margin: 10px 0px;"></a></div>
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Finnish (Mother tongue)</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>English</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Swedish</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
                 </div>
+                <hr class="flex-shrink-1">
+                <h1 style="font-family: Lato, sans-serif;font-size: 30px;color: #036ead;">Tools</h1>
+                <div class="row">
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Mac OSX</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Windows</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Linux</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>MS Office</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Kanban</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Agile Methodologies</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="col" style="min-width: 360px;">
+                        <ul class="list-unstyled">
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Git</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Ableton Live</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>TDD</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Arduino</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Raspberry PI</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                            <li class="text-left" style="font-family: Lato, sans-serif;"><span>Visual Components</span><span class="text-right" style="float: right;"><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i><i class="fa fa-star fa-star-o" style="color: #036ead;"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="flex-shrink-1">
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1 class="text-center" style="font-size: 27px;font-family: Lato, sans-serif;margin: 14px;">See more about my experience</h1>
+                <div class="text-center" style="margin: 40px;"><a href="/cv"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="color: #dddddd;font-family: Lato, sans-serif;background: var(--dark);box-shadow: inset 0px 0px 7px #282d32;height: 40px;border-radius: 14px;border: 1px solid #222222;">Curriculum Vitae</button></a></div>
             </div>
         </section>
     </main>
-    <footer class="text-center footer-dark" style="padding: 37px 0px;margin: 0px;height: 180px;color: rgb(240, 249, 255);background: #222222;">
-        <div class="row">
-            <div class="col">
-                <div style="margin: 0px;height: 36px;"><a href="#" style="margin: 15px;color: rgb(255,255,255);">CV</a><a href="#" style="margin: 15px;color: rgb(255,255,255);">Contact</a></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col item social" style="margin: 0px;height: 35px;"><a href="https://github.com/Artoiss"><i class="icon ion-social-github" data-bss-hover-animate="pulse"></i></a><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="icon ion-social-linkedin" data-bss-hover-animate="pulse"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fab fa-stack-overflow" data-bss-hover-animate="pulse"></i></a></div>
-                <div class="links"></div>
-            </div>
-            <p class="copyright">Arttu Heikura © 2021</p>
-        </div>
+    <footer class="footer-basic" style="background: #222222;">
+        <div class="social"><a href="https://github.com/Artoiss"><i class="icon ion-social-github" data-bss-hover-animate="bounce" style="color: rgb(255,255,255);"></i></a><a href="https://www.linkedin.com/in/arttu--heikura/"><i class="icon ion-social-linkedin" data-bss-hover-animate="bounce" style="color: rgb(255,255,255);"></i></a><a href="https://stackoverflow.com/users/11823822/artoiss"><i class="fab fa-stack-overflow" data-bss-hover-animate="pulse" style="color: rgb(255,255,255);"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/" style="color: rgb(255,255,255);">Home</a></li>
+            <li class="list-inline-item" style="color: rgb(255,255,255);"><a href="/cv" style="color: rgb(255,255,255);">CV</a></li>
+            <li class="list-inline-item" style="color: rgb(255,255,255);"><a href="/contact" style="color: rgb(255,255,255);">Contact</a></li>
+        </ul>
+        <p class="copyright">Arttu Heikura © 2021</p>
     </footer>
-    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/bs-init.js' %}"></script>
-    <script src="{% static 'assets/js/Animated-Type-Heading.js' %}"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
 </body>
 
 </html>
